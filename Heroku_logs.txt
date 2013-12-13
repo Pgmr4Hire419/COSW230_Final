@@ -1,0 +1,101 @@
+2013-10-11T14:49:53.084664+00:00 app[web.1]: [2013-10-11 14:49:53] INFO  ruby 2.0.0 (2013-06-27) [x86_64-linux]
+2013-10-11T14:49:53.089189+00:00 app[web.1]: [2013-10-11 14:49:53] INFO  WEBrick::HTTPServer#start: pid=2 port=27360
+2013-10-11T14:49:55.105748+00:00 app[web.1]: => Booting WEBrick
+2013-10-11T14:49:55.105748+00:00 app[web.1]: => Rails 3.2.14 application starting in production on http://0.0.0.0:27360
+2013-10-11T14:49:55.105748+00:00 app[web.1]: => Call with -d to detach
+2013-10-11T14:49:55.105748+00:00 app[web.1]: => Ctrl-C to shutdown server
+2013-10-11T14:49:55.105748+00:00 app[web.1]: Started GET "/" for 71.106.48.48 at 2013-10-11 14:49:55 +0000
+2013-10-11T14:49:55.678402+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2013-10-11T14:49:56.541138+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2013-10-11T14:49:56.778916+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (52.7ms)
+2013-10-11T14:49:56.870457+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (13.7ms)
+2013-10-11T14:49:56.893350+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (1.1ms)
+2013-10-11T14:49:56.891635+00:00 app[web.1]:   Rendered layouts/_header.html.erb (15.1ms)
+2013-10-11T14:49:56.910782+00:00 app[web.1]: Completed 200 OK in 341ms (Views: 325.2ms | ActiveRecord: 0.0ms)
+2013-10-11T14:49:56.953086+00:00 heroku[router]: at=info method=GET path=/ host=calm-plains-1634.herokuapp.com fwd="71.106.48.48" dyno=web.1 connect=0ms service=1877ms status=304 bytes=0
+2013-10-11T14:49:57.119904+00:00 app[web.1]: Started GET "/assets/application-4c1fd7c98191db88ed45a317185935d1.css" for 71.106.48.48 at 2013-10-11 14:49:57 +0000
+2013-10-11T14:49:57.147283+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/rack/logger.rb:32:in `call_app'
+2013-10-11T14:49:57.147283+00:00 app[web.1]: 
+2013-10-11T14:49:57.147283+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/assets/application-4c1fd7c98191db88ed45a317185935d1.css"):
+2013-10-11T14:49:57.147283+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2013-10-11T14:49:57.147283+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2013-10-11T14:49:57.147283+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.14/lib/active_support/tagged_logging.rb:22:in `tagged'
+2013-10-11T14:49:57.147636+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+2013-10-11T14:49:57.147283+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2013-10-11T14:49:57.147283+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+2013-10-11T14:49:57.147636+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+2013-10-11T14:49:57.147636+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.14/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2013-10-11T14:49:57.147636+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/static.rb:63:in `call'
+2013-10-11T14:49:57.147283+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `block in call'
+2013-10-11T14:49:57.147283+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `call'
+2013-10-11T14:49:57.147993+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/rack/log_tailer.rb:17:in `call'
+2013-10-11T14:49:57.147636+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2013-10-11T14:49:57.147636+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2013-10-11T14:49:57.147636+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/engine.rb:484:in `call'
+2013-10-11T14:49:57.147993+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/application.rb:231:in `call'
+2013-10-11T14:49:57.147993+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+2013-10-11T14:49:57.147636+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2013-10-11T14:49:57.147636+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2013-10-11T14:49:57.147636+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2013-10-11T14:49:57.147993+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+2013-10-11T14:49:57.147993+00:00 app[web.1]: 
+2013-10-11T14:49:57.147993+00:00 app[web.1]: 
+2013-10-11T14:49:57.147993+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+2013-10-11T14:49:57.147993+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+2013-10-11T14:49:57.147993+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+2013-10-11T14:49:57.246345+00:00 app[web.1]: Started GET "/assets/application-aed304999dcb10335054d905268ef441.js" for 71.106.48.48 at 2013-10-11 14:49:57 +0000
+2013-10-11T14:49:57.257326+00:00 app[web.1]: 
+2013-10-11T14:49:57.257326+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2013-10-11T14:49:57.257326+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/rack/logger.rb:32:in `call_app'
+2013-10-11T14:49:57.257326+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `block in call'
+2013-10-11T14:49:57.257326+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2013-10-11T14:49:57.257651+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+2013-10-11T14:49:57.257326+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2013-10-11T14:49:57.257326+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/assets/application-aed304999dcb10335054d905268ef441.js"):
+2013-10-11T14:49:57.257326+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+2013-10-11T14:49:57.257651+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2013-10-11T14:49:57.257651+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2013-10-11T14:49:57.257651+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2013-10-11T14:49:57.257326+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `call'
+2013-10-11T14:49:57.257651+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2013-10-11T14:49:57.257651+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/engine.rb:484:in `call'
+2013-10-11T14:49:57.257850+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+2013-10-11T14:49:57.257850+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+2013-10-11T14:49:57.257850+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+2013-10-11T14:49:57.257850+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/rack/log_tailer.rb:17:in `call'
+2013-10-11T14:49:57.257850+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+2013-10-11T14:49:57.257850+00:00 app[web.1]: 
+2013-10-11T14:49:57.257326+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.14/lib/active_support/tagged_logging.rb:22:in `tagged'
+2013-10-11T14:49:57.257651+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.14/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2013-10-11T14:49:57.257651+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+2013-10-11T14:49:57.257651+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/static.rb:63:in `call'
+2013-10-11T14:49:57.257651+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2013-10-11T14:49:57.257850+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/application.rb:231:in `call'
+2013-10-11T14:49:57.257850+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+2013-10-11T14:49:57.168457+00:00 heroku[router]: at=info method=GET path=/assets/application-4c1fd7c98191db88ed45a317185935d1.css host=calm-plains-1634.herokuapp.com fwd="71.106.48.48" dyno=web.1 connect=1ms service=68ms status=404 bytes=728
+2013-10-11T14:49:57.257850+00:00 app[web.1]: 
+2013-10-11T14:49:57.395580+00:00 heroku[router]: at=info method=GET path=/assets/rails-a3386665c05a2d82f711a4aaa72d247c.png host=calm-plains-1634.herokuapp.com fwd="71.106.48.48" dyno=web.1 connect=9ms service=30ms status=200 bytes=6646
+2013-10-11T14:49:58.285578+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-10-11T14:49:58.286422+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-10-11T14:49:58.923317+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2013-10-11T14:49:59.887296+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2013-10-11T14:49:59.887296+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/commands/server.rb:70:in `start'
+2013-10-11T14:49:59.887296+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+2013-10-11T14:49:59.887296+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:13:in `run'
+2013-10-11T14:49:59.887296+00:00 app[web.1]: [2013-10-11 14:49:59] FATAL SignalException: SIGTERM
+2013-10-11T14:49:59.887296+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2013-10-11T14:49:59.887296+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2013-10-11T14:49:59.887296+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/server.rb:268:in `start'
+2013-10-11T14:49:59.887511+00:00 app[web.1]: 	script/rails:6:in `<main>'
+2013-10-11T14:49:59.887296+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/commands.rb:50:in `tap'
+2013-10-11T14:49:59.887511+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/commands.rb:50:in `<top (required)>'
+2013-10-11T14:49:59.889623+00:00 app[web.1]: [2013-10-11 14:49:59] INFO  going to shutdown ...
+2013-10-11T14:49:59.887296+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.14/lib/rails/commands.rb:55:in `block in <top (required)>'
+2013-10-11T14:49:59.887511+00:00 app[web.1]: 	script/rails:6:in `require'
+2013-10-11T14:49:59.889719+00:00 app[web.1]: [2013-10-11 14:49:59] INFO  WEBrick::HTTPServer#start done.
+2013-10-11T14:49:59.890067+00:00 app[web.1]: Exiting
+2013-10-11T14:50:02.009895+00:00 heroku[web.1]: Process exited with status 143
+2013-10-11T14:50:01.854751+00:00 app[web.1]: [2013-10-11 14:50:01] INFO  ruby 2.0.0 (2013-06-27) [x86_64-linux]
+2013-10-11T14:50:01.854751+00:00 app[web.1]: [2013-10-11 14:50:01] INFO  WEBrick 1.3.1
+2013-10-11T14:50:01.854751+00:00 app[web.1]: [2013-10-11 14:50:01] INFO  WEBrick::HTTPServer#start: pid=2 port=42306
+2013-10-11T14:50:01.649693+00:00 heroku[web.1]: State changed from starting to up

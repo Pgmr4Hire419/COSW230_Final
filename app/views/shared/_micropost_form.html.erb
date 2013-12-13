@@ -1,0 +1,15 @@
+<%= form_for(@micropost) do |f| %>
+  <%= render 'shared/error_messages', object: @micropost %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+  <p></p>
+  <small>
+    Note: Microposts are limited to 180 characters. <br>
+	If you need more space use multiple posts.
+  </small>
+  <p></p>
+  <p></p>
+  <%= image_tag("Anime_Typing.png")%>
+<% end %>
